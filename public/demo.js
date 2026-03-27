@@ -15,7 +15,9 @@ void async function Demo() {
         let ac = text.indexOf('Autocode.com');
         if (ac > -1) {
           let uni = 'the universe';
-          if (ac == 0) { uni = 'The universe'; }
+          if (ac == 0) {
+            uni = 'The universe';
+          }
           div_content[i].textContent = text.replaceAll('Autocode.com', uni);
 
         }
@@ -25,12 +27,11 @@ void async function Demo() {
           div_content[i].textContent = textl.replaceAll('webgpt', '𝖯𝖺𝗍𝖦𝖯𝖳');
           div_content[i].style.textTransform = 'capitalize';
         }
-      } catch (e) { continue; }
+      } catch (e) {
+        continue;
+      }
     }
 
-
-
   }, 100);
-
 
 }?.();
