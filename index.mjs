@@ -12,5 +12,3 @@ async function onRequest(req, res) {
 
   return fileFromRequest(req, res);
 }
-
-
